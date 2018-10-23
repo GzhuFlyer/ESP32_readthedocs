@@ -43,9 +43,9 @@ ESP32 是集成 2.4 GHz Wi-Fi 和蓝牙双模的单芯片方案，采用台积�
    :maxdepth: 2
    :caption: 简介:
 
-   简介 <introduce>
-   开始 <get-started/index>
-   模组选型 <modules/modules>
+   简介 <index>
+   开发板选型 <boards/boards.rst>
+
 
 .. toctree::
    :maxdepth: 2
@@ -53,6 +53,25 @@ ESP32 是集成 2.4 GHz Wi-Fi 和蓝牙双模的单芯片方案，采用台积�
 
    搭建环境 <introduce>
    其他 <get-started/index>
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 模组选型:
+
+   模组选型 <modules/modules>
+   ESP32-S <modules/ESP32_S>
+   ESP32-A1S <modules/ESP32_A1S>
+   ESP32-WROOM-32 <modules/ESP32_WROOM_32>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 开发板选型:
+
+   开发板选型 <board/boards>
+   ESP32-Audio-Kit <board/ESP32-Audio-Kit>
+   ESP32-CAM <board/ESP32-CAM>
+   NodeMCU-32S <board/NodeMCU-32S>
 
 Indices and tables
 ==================
