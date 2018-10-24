@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ESP-WROOM-32 &mdash; ESP32-readthedocs 0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="开发板选型" href="../board/boards.html" />
+    <link rel="prev" title="ESP32-A1S" href="ESP32_A1S.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ESP32-readthedocs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">ESP32 教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduce.html">搭建环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../get-started/index.html">其他</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html">模组选型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html">ESP32-S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#esp32">ESP32 系列模组专题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id1">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id2">资源汇总</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id3">工具下载：开发工具清单</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#sdk">出厂固件及SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id8">规格书</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id10">其它资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_S.html#id15">联系我们</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ESP32_A1S.html">ESP32-A1S</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ESP-WROOM-32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">资源汇总</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">规格书</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">其它资源</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">联系我们</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/boards.html">开发板选型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-Audio-Kit.html">ESP32-Audio-Kit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html">ESP32-CAM摄像头开发板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id1">概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id2">产品特性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id3">应用场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id4">产品规格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id5">注意：</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id6">摄像头驱动代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/ESP32-CAM.html#id8">文档</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../board/NodeMCU-32S.html">NodeMCU-32S</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">入门:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduce.html">搭建环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../get-started/index.html">其他</a></li>
+</ul>
+<p class="caption"><span class="caption-text">模组选型:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">模组选型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html">ESP32-S</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#esp32">ESP32 系列模组专题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id1">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id2">资源汇总</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id3">工具下载：开发工具清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#sdk">出厂固件及SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id8">规格书</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id10">其它资源</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id15">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_A1S.html">ESP32-A1S</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ESP-WROOM-32</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">资源汇总</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">规格书</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id4">其它资源</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id5">联系我们</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开发板选型:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/boards.html">开发板选型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-Audio-Kit.html">ESP32-Audio-Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html">ESP32-CAM摄像头开发板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id1">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id2">产品特性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id3">应用场景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id4">产品规格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id5">注意：</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id6">摄像头驱动代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id8">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/NodeMCU-32S.html">NodeMCU-32S</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ESP32-readthedocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>ESP-WROOM-32</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/ESP_WROOM_32.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="esp-wroom-32">
+<h1>ESP-WROOM-32<a class="headerlink" href="#esp-wroom-32" title="永久链接至标题">¶</a></h1>
+</div>
+<div class="section" id="id1">
+<h1>概述<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>ESP32 WiFi 模块是由安信可科技自主设计研发，该模块核心处理器 ESP32提供了一套完整的802.11 b/g/n/e/i 无线局域网（WLAN）和蓝牙4.2解决方案，具有最小物理尺寸。此款芯片专为低功耗和移动消费电子设备、可穿戴和物联网设备而设计，片上集成了WLAN和蓝牙的所有功能，具有低成本、布局好的特点。ESP32同时提供了一个开放的平台，支持用户灵活地自定义功能，用于不同的应用场景。</p>
+<p>ESP32是一款WiFi和蓝牙系统级芯片（SoC），具有行业领先的射频性能、低功耗和高度集成的优势。ESP32集成了完整的发射/接收射频功能，包括天线开关，射频balun，功率放大器，低噪放大器，过滤器，电源管理模块和先进的自校准电路。自校准电路实现了动态自动调整以消除外部电路的缺陷。ESP32带有2个32位、LX6 CPU,主频高达240MHz，采用7级流水线架构。ESP32还集成了丰富的模拟传感和数字接口。 ESP32的超低功耗射频架构和拥有专利的省电技术延长了实际应用的电池续航时间。</p>
+<p>ESP32完全符合WiFi 802.11b/g/n/e/i和蓝牙4.2的标准，集成了WiFi/蓝牙/BLE射频和低功耗技术，并且支持开放性的实时操作系统RTOS。ESP32所集成的调整缓存帮助提高系统性能并且优化系统存储。灵活的RAM/ROM划分架构则允许用户自定义以满足特殊要求和使用情况。 ESP32可作为独立应用程序或是主机MCU的从设备。作为从设备，ESP32通过SPI/SDIO或I2C/UART接口提供WiFi和蓝牙功能。</p>
+<p>通用型WiFi-BT-BLE MCU模组，PCB天线或ipex天线，功能强大，用途广泛，简单易用。</p>
+</div>
+<div class="section" id="id2">
+<h1>资源汇总<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<p>用户手册及开发文档：ESP32系列文档中心</p>
+<p>开发环境搭建： 如何安装安信可一体化开发环境 , 如何使用安信可 ESP 系列一体化开发环境 , 如何为 ESP 系列模组烧录固件 ESP32 lubuntu环境下搭建（推荐）</p>
+<p>开发示例：ESP32 示例</p>
+<p>出厂固件及SDK：ESP32 最新SDK发布</p>
+<p>硬件资源：esp32_modules_libraries.zip</p>
+<p>工具下载：开发工具清单</p>
+<p>常见问题：ESP32 常见问题</p>
+</div>
+<div class="section" id="id3">
+<h1>规格书<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<p>ESP32-S 产品规格书</p>
+</div>
+<div class="section" id="id4">
+<h1>其它资源<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
+<p>安信可官方淘宝店铺</p>
+<p>安信可官方论坛</p>
+<p>乐鑫官方论坛</p>
+<p>esp32全球粉丝论坛</p>
+<p>esp32 English Wiki</p>
+<p>NodeMCU 官网</p>
+<p>ESP32论坛</p>
+</div>
+<div class="section" id="id5">
+<h1>联系我们<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h1>
+<p><a class="reference external" href="mailto:support&#37;&#52;&#48;aithinker&#46;com">support<span>&#64;</span>aithinker<span>&#46;</span>com</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../board/boards.html" class="btn btn-neutral float-right" title="开发板选型" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ESP32_A1S.html" class="btn btn-neutral" title="ESP32-A1S" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ai-Thinker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

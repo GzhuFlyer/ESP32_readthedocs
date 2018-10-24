@@ -1,0 +1,82 @@
+ESP32-S
+===================================
+
+
+ESP32 系列模组专题
+========================
+概述
+========================
+ESP32 WiFi 模块是由安信可科技自主设计研发，该模块核心处理器 ESP32提供了一套完整的802.11 b/g/n/e/i 无线局域网（WLAN）和蓝牙4.2解决方案，具有最小物理尺寸。此款芯片专为低功耗和移动消费电子设备、可穿戴和物联网设备而设计，片上集成了WLAN和蓝牙的所有功能，具有低成本、布局好的特点。ESP32同时提供了一个开放的平台，支持用户灵活地自定义功能，用于不同的应用场景。
+
+ESP32是一款WiFi和蓝牙系统级芯片（SoC），具有行业领先的射频性能、低功耗和高度集成的优势。ESP32集成了完整的发射/接收射频功能，包括天线开关，射频balun，功率放大器，低噪放大器，过滤器，电源管理模块和先进的自校准电路。自校准电路实现了动态自动调整以消除外部电路的缺陷。ESP32带有2个32位、LX6 CPU,主频高达240MHz，采用7级流水线架构。ESP32还集成了丰富的模拟传感和数字接口。 ESP32的超低功耗射频架构和拥有专利的省电技术延长了实际应用的电池续航时间。
+
+ESP32完全符合WiFi 802.11b/g/n/e/i和蓝牙4.2的标准，集成了WiFi/蓝牙/BLE射频和低功耗技术，并且支持开放性的实时操作系统RTOS。ESP32所集成的调整缓存帮助提高系统性能并且优化系统存储。灵活的RAM/ROM划分架构则允许用户自定义以满足特殊要求和使用情况。 ESP32可作为独立应用程序或是主机MCU的从设备。作为从设备，ESP32通过SPI/SDIO或I2C/UART接口提供WiFi和蓝牙功能。
+
+通用型WiFi-BT-BLE MCU模组，PCB天线或ipex天线，功能强大，用途广泛，简单易用。
+
+资源汇总
+========================
+ESP32-S规格书: http://wiki.ai-thinker.com/_media/esp32/docs/esp-32s_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6.pdf
+
+开发环境搭建： https://docs.espressif.com/projects/esp-idf/zh_CN/latest/get-started/index.html
+
+硬件资源：http://wiki.ai-thinker.com/_media/esp32/hardware/esp32_modules_libraries.zip
+
+使用教程请参考 https://nodemcu.readthedocs.io/en/dev-esp32/
+
+工具下载：开发工具清单
+===================================
+1、SDK 一体化开发环境： 下载地址：http://pan.baidu.com/s/1skRvR1j 
+
+2、烧录WiFi固件工具：ESP_DOWNLOAD_TOOL 下载地址： http://wiki.ai-thinker.com/_media/flash_download_tools_v3.6.2.2_1.zip
+
+3、安信可串口调试助手 http://wiki.ai-thinker.com/_media/tools/esp8266_debug_tool_v2.1.rar
+
+4、TCP/UDP 网络调试助手 
+
+下载地址：`（PC版） <http://wiki.ai-thinker.com/_media/tools/tcpudpdbg.zip>`_ `(Android版本)  <https://a.app.qq.com/o/simple.jsp?pkgname=com.aithinker.networkassistant>`_ 
+							  
+5、 串口驱动（windos）下载地址：http://wiki.ai-thinker.com/_media/tools/serial_driver_windos.7z
+
+6、 USB-T1 串口驱动（Windows/Mac_OS/Linux）下载地址：http://wiki.ai-thinker.com/_media/tools/cp2102驱动.zip							
+
+
+出厂固件及SDK
+============================
+`乐鑫原厂sdk下载 <https://github.com/espressif/esp-idf/releases>`_
+
+`ESP32-S 出厂默认固件下载 <http://wiki.ai-thinker.com/_media/esp32/sdk/ai-thinker_esp32-s_dio_32mbit_v1.0_2018_8_25.zip>`_
+
+`ESP-32S AT 固件下载 <http://wiki.ai-thinker.com/_media/esp32/ai-thinker_esp32_dio_32mbit_v2.0_20171205.rar>`_
+
+`NodeMCU-32S 出厂固件下载 <http://ai-thinker_nodemcu-32s_dio_32mbit_20170705.7z>`_
+
+`蓝牙配网固件下载 <http://wiki.ai-thinker.com/_media/esp32/sdk/ai-thinker_nodemcu-32s_dio_32mbit_20170705.7z>`_
+
+`教程请参考 <http://mp.weixin.qq.com/s/wlUWk-IXG-rLjkj_rQgIeA>`_
+
+
+
+
+规格书
+========================
+`ESP32-S 产品规格书 <http://wiki.ai-thinker.com/_media/esp32/docs/a109ps00a0.pdf>`_
+
+其它资源
+========================
+
+`安信可官方淘宝店铺 <https://anxinke.taobao.com/>`_
+
+`安信可官方论坛 <http://bbs.ai-thinker.com/forum.php>`_
+
+`乐鑫官方论坛 <https://bbs.espressif.com/>`_
+
+`esp32全球粉丝论坛 <https://www.esp32.com/>`_
+
+`NodeMCU 官网 <http://nodemcu.com/index_cn.html>`_
+
+
+联系我们
+========================
+
+support@aithinker.com

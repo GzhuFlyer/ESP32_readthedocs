@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ESP32-SP &mdash; ESP32-readthedocs 0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ESP32-readthedocs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">ESP32 教程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+<p class="caption"><span class="caption-text">入门:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduce.html">搭建环境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../get-started/index.html">其他</a></li>
+</ul>
+<p class="caption"><span class="caption-text">模组选型:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">模组选型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html">ESP32-S</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#esp32">ESP32 系列模组专题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id1">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id2">资源汇总</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id4">规格书</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id5">其它资源</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_S.html#id6">联系我们</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP32_A1S.html">ESP32-A1S</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ESP_WROOM_32.html">ESP-WROOM-32</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开发板选型:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../board/boards.html">开发板选型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-Audio-Kit.html">ESP32-Audio-Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html">ESP32-CAM摄像头开发板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id1">概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id2">产品特性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id3">应用场景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id4">产品规格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id5">注意：</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id6">摄像头驱动代码</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/ESP32-CAM.html#id8">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../board/NodeMCU-32S.html">NodeMCU-32S</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ESP32-readthedocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>ESP32-SP</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/ESP32_SP.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="esp32-sp">
+<h1>ESP32-SP<a class="headerlink" href="#esp32-sp" title="永久链接至标题">¶</a></h1>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ai-Thinker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
